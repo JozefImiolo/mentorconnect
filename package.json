@@ -9,7 +9,12 @@
     "astro": "astro",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "supabase": "supabase",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:reset": "supabase db reset",
+    "supabase:types": "supabase gen types typescript --local > src/db/database.types.ts"
   },
   "dependencies": {
     "@astrojs/node": "^9.4.3",
@@ -47,6 +52,7 @@
     "husky": "9.1.7",
     "lint-staged": "15.5.0",
     "prettier-plugin-astro": "0.14.1",
+    "supabase": "^2.70.4",
     "typescript-eslint": "8.28.0"
   },
   "lint-staged": {
